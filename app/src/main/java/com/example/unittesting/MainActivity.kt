@@ -1,5 +1,6 @@
 package com.example.unittesting
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -34,6 +35,8 @@ class MainActivity : AppCompatActivity() {
 
             if (validationResult == null) {
                 showToast("Validation successful!")
+                /*intent = Intent(applicationContext, RegisterActivity::class.java)
+                startActivity(intent)*/
             } else {
                 showToast(validationResult)
             }

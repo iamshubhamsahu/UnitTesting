@@ -35,23 +35,23 @@ class MainActivityTest : TestCase() {
     fun testButtonClick() {
 
         val dataSets = arrayOf(
-            TestData("sahushubham", "sahushubham2208@gmail.com", "#Shubham2208"),
+            TestData("gmail", "gmail@gmail.com", "#gmail123"),
             TestData("anotheruser", "user@example.com", "password123"),
             TestData("user3", "user3@example.com", "secret"),
-            TestData("", "sahushubham2208@gmail.com", "#Shubham2208"),
+            TestData("", "gmail@gmail.com", "#gmail123"),
             TestData(
-                "sahu", "sahushubham2208@gmail.com", "#Shubham2208"
+                "sahu", "gmail@gmail.com", "#gmail123"
             ),
-            TestData("qwertyuiopasdfghjklzxcvbnm",
-                "sahushubham2208@gmail.com",
-                "#Shubham2208"),
-            TestData("sahushubham", "", "#Shubham2208"),
-            TestData("sahushubham", "sahushubham2208", "#Shubham2208"),
-            TestData("sahushubham", "@gmail.com", "#Shubham2208"),
-            TestData("sahushubham", "invalid-email", "#Shubham2208"),
-            TestData("sahushubham", "sahushubham2208@gmail.com", "NoDigitPassword"),
-            TestData("sahushubham", "sahushubham2208@gmail.com", ""),
-            TestData("sahushubham", "sahushubham2208@gmail.com", "22081998"),
+            TestData("gmailgmailgmailgmailgmailgmailgmailgmailgmail",
+                "gmail@gmail.com",
+                "#gmail123"),
+            TestData("gmailgmail", "", "#gmail123"),
+            TestData("ggmailmail", "gmail", "#gmail123"),
+            TestData("gmailgmail", "@gmail.com", "#gmail123"),
+            TestData("gmailgmail", "invalid-email", "#gmail123"),
+            TestData("gmailgmail", "gmailgmailgmail@gmail.com", "NoDigitPassword"),
+            TestData("gmailgmail", "gmailgmailgmail@gmail.com", ""),
+            TestData("gmailgmail", "gmailgmailgmail@gmail.com", "123445679"),
         )
 
         for (data in dataSets) {
@@ -69,11 +69,6 @@ class MainActivityTest : TestCase() {
 
             // Add assertions here to verify the expected behavior for each data set
         }
-
-
     }
-
     data class TestData(val username: String, val email: String, val password: String)
-
-
 }

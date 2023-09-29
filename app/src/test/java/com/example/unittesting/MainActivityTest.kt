@@ -74,5 +74,6 @@ class MainActivityTest {
         val password = "NoDigitPassword"
         val assert = Validator.validate("sahushubham", "sahushubham2208@gmail.com", password)
         assert(assert == "password must contain at least one digit")
+
     }
 }
